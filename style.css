@@ -103,15 +103,20 @@ article p + p { margin-top: .8rem; }
 .profile-identity .portrait { width: 52px; }
 .opening h1 { font: 700 clamp(1.9rem, 4.2vw, 3.15rem)/1.27 "Songti SC", "Noto Serif CJK SC", serif; letter-spacing: -.035em; text-wrap: balance; }
 #record {
-  margin-top: 1.4rem;
-  padding-top: 1.1rem;
+  margin-top: 2rem;
+  padding-top: 1.6rem;
   border-top: 1px solid #e0d5ed;
   scroll-margin-top: 1rem;
 }
-#record h2 { font-size: 1.05rem; }
+#record h2 { font-size: 1.25rem; }
 #record .amount { font-size: clamp(1.25rem, 2.25vw, 1.85rem); white-space: nowrap; }
-#record .metrics { margin-top: .7rem; padding-top: 0; border: 0; }
-#record .metrics-note { margin-bottom: 0; }
+#record .metrics { margin-top: 1rem; padding-top: 0; border: 0; }
+#record .metrics-note {
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+}
 
 .opening { container-type: inline-size; }
 .opening :is(h1, h3) { font-size: clamp(1.35rem, 3.25cqw, 2.25rem); text-wrap: wrap; }
