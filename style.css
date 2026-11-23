@@ -98,3 +98,9 @@ article p + p { margin-top: .8rem; }
 .opening h3 a { color: var(--ink); text-decoration: none; }
 .opening h3 a:hover { text-decoration: underline; }
 .opening p { margin-top: .6rem; }
+
+.profile-identity strong { font-size: 1.1rem; }
+.profile-identity .portrait { width: 52px; }
+.opening h1 { font: 700 clamp(1.9rem, 4.2vw, 3.15rem)/1.27 "Songti SC", "Noto Serif CJK SC", serif; letter-spacing: -.035em; text-wrap: balance; }
+#record .metrics { margin-top: 1rem; }
+#record .metrics-note { margin-bottom: 1.25rem; }
