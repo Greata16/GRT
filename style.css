@@ -17,7 +17,7 @@ p, h1, h2, h3 { margin: 0; }
 .bar { border-bottom: 1px solid var(--line); }
 .nav-row { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 1rem; }
 .brand { display: inline-flex; align-items: center; gap: .72rem; color: var(--ink); font-size: .95rem; font-weight: 730; text-decoration: none; }
-.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: white; font-weight: 760; line-height: 1; }
+.brand-mark { display: block; width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
 .nav-link { color: var(--muted); font-size: .9rem; text-decoration: none; }
 .nav-link:hover { text-decoration: underline; }
 .home-intro { padding: clamp(3.8rem, 8vw, 7.1rem) 0 clamp(2.5rem, 5vw, 4.25rem); }
@@ -55,7 +55,7 @@ article p + p { margin-top: .8rem; }
   .timeline li { grid-template-columns: 1fr; gap: .15rem; }
 }
 
-.brand-mark { background: #7838cf; }
+
 .home-intro { padding: clamp(2.7rem, 6vw, 4.8rem) 0 2rem; }
 .home-intro h1 { font-size: clamp(2.65rem, 6vw, 4.8rem); }
 .profile-card, .profile-head {
@@ -93,7 +93,7 @@ article p + p { margin-top: .8rem; }
   .person-link .read-link { margin-left: 0; }
 }
 
-.opening { max-width: 52rem; padding-top: 1.3rem; }
+.opening { padding-top: 1.3rem; }
 .opening h2, .opening h3 { font-family: "Songti SC","Noto Serif CJK SC",serif; font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.35; text-wrap: balance; }
 .opening h3 a { color: var(--ink); text-decoration: none; }
 .opening h3 a:hover { text-decoration: underline; }
@@ -104,3 +104,6 @@ article p + p { margin-top: .8rem; }
 .opening h1 { font: 700 clamp(1.9rem, 4.2vw, 3.15rem)/1.27 "Songti SC", "Noto Serif CJK SC", serif; letter-spacing: -.035em; text-wrap: balance; }
 #record .metrics { margin-top: 1rem; }
 #record .metrics-note { margin-bottom: 1.25rem; }
+
+.opening { container-type: inline-size; }
+.opening :is(h1, h3) { font-size: clamp(1.35rem, 3.25cqw, 2.25rem); text-wrap: wrap; }
