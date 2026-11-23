@@ -92,3 +92,9 @@ article p + p { margin-top: .8rem; }
   .person-link { flex-wrap: wrap; }
   .person-link .read-link { margin-left: 0; }
 }
+
+.opening { max-width: 52rem; padding-top: 1.3rem; }
+.opening h2, .opening h3 { font-family: "Songti SC","Noto Serif CJK SC",serif; font-size: clamp(1.6rem, 3vw, 2.5rem); line-height: 1.35; text-wrap: balance; }
+.opening h3 a { color: var(--ink); text-decoration: none; }
+.opening h3 a:hover { text-decoration: underline; }
+.opening p { margin-top: .6rem; }
