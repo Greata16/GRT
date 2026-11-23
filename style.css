@@ -108,7 +108,7 @@ article p + p { margin-top: .8rem; }
   border-top: 1px solid #e0d5ed;
   scroll-margin-top: 1rem;
 }
-#record h2 { font-size: 1.25rem; }
+#record h2 { font-size: 20px; }
 #record .amount { font-size: clamp(1.25rem, 2.25vw, 1.85rem); white-space: nowrap; }
 #record .metrics { margin-top: 1rem; padding-top: 0; border: 0; }
 #record .metrics-note {
