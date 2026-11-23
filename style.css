@@ -102,6 +102,13 @@ article p + p { margin-top: .8rem; }
 .profile-identity strong { font-size: 1.1rem; }
 .profile-identity .portrait { width: 52px; }
 .opening h1 { font: 700 clamp(1.9rem, 4.2vw, 3.15rem)/1.27 "Songti SC", "Noto Serif CJK SC", serif; letter-spacing: -.035em; text-wrap: balance; }
+#record {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #faf7fe;
+  padding: clamp(1rem, 2.6vw, 1.8rem);
+}
+#record .amount { font-size: clamp(1.25rem, 2.25vw, 1.85rem); white-space: nowrap; }
 #record .metrics { margin-top: 1rem; }
 #record .metrics-note { margin-bottom: 1.25rem; }
 
