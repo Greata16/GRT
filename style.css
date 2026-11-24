@@ -149,3 +149,115 @@ article p + p { margin-top: .8rem; }
 @media (max-width: 520px) {
   .trade-case dl > div { grid-template-columns: 1fr; gap: .12rem; }
 }
+
+/* Research archive */
+.profile {
+  --paper: #f3f5f9;
+  --ink: #19263b;
+  --muted: #536078;
+  --line: #dce2ec;
+  --accent: #5431a0;
+  --profile-inset: clamp(1.05rem, 3vw, 2rem);
+}
+.profile > .wrap { width: min(1160px, calc(100% - 48px)); }
+.profile .bar { background: #fff; }
+.top-links { display: flex; gap: clamp(.9rem, 3vw, 1.8rem); }
+.top-links a { color: var(--muted); text-decoration: none; font-size: .88rem; }
+.top-links a:hover { color: var(--accent); }
+.profile .profile-head {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 30px #19263b0d;
+}
+.profile .profile-identity, .profile .opening {
+  padding-inline: var(--profile-inset);
+  background: #161d36;
+  background: linear-gradient(105deg, #161d36 10%, #30214f 100%);
+  color: #fff;
+}
+.profile .profile-identity { padding-top: 1.8rem; }
+.profile .profile-identity p, .profile .profile-identity a { color: #d7d8ed; }
+.profile .opening { padding-block: 1.1rem 1.8rem; }
+.profile .opening h1 {
+  font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(1.65rem, 3.4vw, 2.6rem);
+  line-height: 1.35;
+}
+.profile .opening p { color: #dedbee; }
+.profile #record { margin: 0; padding: 1.45rem var(--profile-inset); border: 0; }
+.profile #record .metrics { gap: .65rem; margin-top: .9rem; }
+.profile #record .metric {
+  padding: .78rem .9rem;
+  border: 1px solid #d9e8e6;
+  border-radius: 10px;
+  background: #edf8f5;
+}
+.profile #record .metric:nth-child(2) { background: #eef3fd; border-color: #dce5fa; }
+.profile #record .metric:nth-child(3) { background: #fff1ef; border-color: #f3dedb; }
+.profile #record .amount { color: #176254; font-variant-numeric: tabular-nums; }
+.profile #record .metric:nth-child(2) .amount { color: #254f99; }
+.profile #record .metric:nth-child(3) .amount { color: #963f42; }
+.profile #record .metrics-note { margin-top: 1rem; padding-top: .85rem; line-height: 1.75; }
+.topic-panel {
+  margin-top: 1.6rem;
+  padding: 1.25rem var(--profile-inset);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #fff;
+}
+.topic-head { display: flex; justify-content: space-between; align-items: center; gap: .8rem; margin-bottom: .85rem; }
+.topic-head h2 { font-size: 1.2rem; }
+.topic-search { display: flex; align-items: center; gap: .65rem; color: var(--muted); font-size: .88rem; }
+.topic-search input { width: min(15rem, 45vw); padding: .65rem .75rem; border: 1px solid #cdd6e5; border-radius: 8px; background: #f8faff; color: var(--ink); font: inherit; }
+.topic-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; }
+.topic-card { padding: .7rem .85rem; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); text-decoration: none; background: #f8faff; }
+.topic-card strong, .topic-card span { display: block; }
+.topic-card span { font-size: .84rem; color: var(--muted); }
+.topic-card:hover { border-color: #9984ca; background: #f4efff; }
+.topic-empty { color: var(--muted); }
+.topic-panel [hidden] { display: none; }
+.profile .reading-layout { padding: 0; grid-template-columns: minmax(0, 1fr) 12rem; gap: 1.25rem; }
+.profile article { padding: 1.4rem 0 2rem; min-width: 0; }
+.profile article > section {
+  margin: 0 0 .85rem;
+  padding: clamp(1.05rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+.profile article .review-title { border-left: 4px solid #7852c4; }
+.profile article h2 { font-size: clamp(1.25rem, 2.35vw, 1.65rem); }
+.profile article p:not(.note, .sources), .trade-case dd { line-height: 1.85; }
+.profile .trade-toc {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: .85rem;
+  margin-top: 1.4rem;
+  gap: .15rem;
+}
+.profile .trade-toc a { display: block; padding: .25rem .35rem; border-radius: 5px; }
+.profile .trade-toc a:hover { text-decoration: none; color: var(--accent); background: #f3effa; }
+.profile .trade-case { background: #f1f6fd; border-color: #dbe5f2; }
+.profile #capital .trade-case, .profile #discipline .trade-case { background: #eef7f4; border-color: #dbeae4; }
+.profile #risk .trade-case { background: #fbf5e9; border-color: #eee2c8; }
+.profile .trade-case dt { color: #304e76; }
+.profile #risk .trade-case dt { color: #775120; }
+.profile .sources { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .85rem; }
+.profile .sources a { padding: .18rem .48rem; background: #edf1f8; border-radius: 5px; color: #365487; text-decoration: none; font-size: .8rem; }
+.profile .sources a:hover { text-decoration: underline; }
+@media (max-width: 820px) {
+  .profile .reading-layout { display: block; }
+  .profile .trade-toc { display: flex; flex-wrap: wrap; position: static; gap: .35rem; }
+  .profile .trade-toc p { flex-basis: 100%; }
+}
+@media (max-width: 600px) {
+  .profile > .wrap { width: calc(100% - 24px); }
+  .topic-head { align-items: stretch; flex-direction: column; }
+  .topic-search input { width: 100%; min-width: 0; }
+  .topic-search { white-space: nowrap; }
+  .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .profile #record .metric { grid-template-columns: minmax(7.2rem, .8fr) 1fr; }
+}
