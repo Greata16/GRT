@@ -124,3 +124,28 @@ article p + p { margin-top: .8rem; }
 .profile { --profile-inset: clamp(1.1rem, 4vw, 2.35rem); }
 .profile .profile-head { padding-inline: var(--profile-inset); }
 .profile .reading-layout { padding-inline: calc(var(--profile-inset) + 1px); }
+
+.trade-case {
+  margin-top: 1.35rem;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #faf7fe;
+}
+.trade-case h3 { font-size: 1.08rem; }
+.trade-case dl { display: grid; gap: .75rem; margin: .8rem 0 1rem; }
+.trade-case dl > div {
+  display: grid;
+  grid-template-columns: minmax(6rem, 21%) minmax(0, 1fr);
+  gap: .75rem;
+}
+.trade-case dt { color: var(--accent); font-weight: 700; }
+.trade-case dd { margin: 0; }
+.trade-chapter .sources { color: var(--muted); }
+.trade-case .sources { border-top: 1px solid var(--line); padding-top: .65rem; }
+@media (min-width: 731px) {
+  .trade-toc { gap: .55rem; }
+}
+@media (max-width: 520px) {
+  .trade-case dl > div { grid-template-columns: 1fr; gap: .12rem; }
+}
