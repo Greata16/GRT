@@ -120,3 +120,7 @@ article p + p { margin-top: .8rem; }
 
 .opening { container-type: inline-size; }
 .opening :is(h1, h3) { font-size: clamp(1.35rem, 3.25cqw, 2.25rem); text-wrap: wrap; }
+
+.profile { --profile-inset: clamp(1.1rem, 4vw, 2.35rem); }
+.profile .profile-head { padding-inline: var(--profile-inset); }
+.profile .reading-layout { padding-inline: calc(var(--profile-inset) + 1px); }
