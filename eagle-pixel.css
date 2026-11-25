@@ -1,6 +1,7 @@
 body.pixel-palette {
-  --paper: #f2f4f8;
-  --surface: #fdfdff;
+  --paper: #fff;
+  --surface: #fff;
+  --opening-paper: #f2f4f8;
   --ink: #221934;
   --muted: #595270;
   --line: #ddd6e5;
@@ -29,6 +30,19 @@ body.pixel-palette {
 .pixel-palette .topic-overview { border-color: var(--line); }
 .pixel-palette .topic-overview a { color: var(--brand); }
 .pixel-palette .topic-overview a:hover { color: var(--event-blue); }
+.pixel-palette .opening-band {
+  position: relative;
+  isolation: isolate;
+}
+.pixel-palette .opening-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--opening-paper);
+  box-shadow: 0 0 0 100vmax var(--opening-paper);
+  clip-path: inset(0 -100vmax);
+}
 .pixel-palette .front-page { border-bottom-color: var(--navy); }
 .pixel-palette .hero h1 { color: var(--navy); }
 .pixel-palette .hero-ledger { border-top-color: var(--violet); }
@@ -146,10 +160,8 @@ body.pixel-palette {
 .pixel-palette .a9-ledger .ledger-grid .main-stat dd { font-size: clamp(1.7rem, 3.2vw, 2.45rem); }
 .pixel-palette .a9-ledger .instrument { color: #74502d; }
 
-/* Warm paper surfaces across index and long-form cards. */
+/* Neutral fills for labels and notes. */
 body.pixel-palette {
-  --paper: #f4f5f7;
-  --surface: #fff;
   --line: #dfe2e7;
   --paper-note: #f2f3f5;
 }
@@ -164,14 +176,13 @@ body.pixel-palette {
   background: var(--paper-note);
   border-color: var(--line);
 }
-.pixel-palette .case-meta {
-  display: flex;
+.pixel-palette .case-actions {
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: flex-start;
   gap: .35rem;
 }
 .pixel-palette .case-card .symbol,
-.pixel-palette .case-meta a {
+.pixel-palette .case-actions a {
   padding: .1rem .43rem;
   border: 1px solid var(--line);
   border-radius: 4px;
@@ -179,7 +190,5 @@ body.pixel-palette {
   font-size: .77rem;
   line-height: 1.5;
 }
-.pixel-palette .case-card .symbol { margin-right: .12rem; }
-.pixel-palette .case-meta a { color: var(--brand); text-decoration: none; }
-.pixel-palette .case-meta a:hover { text-decoration: underline; }
-.pixel-palette .case-card .case-note { font-size: .8rem; color: var(--muted); }
+.pixel-palette .case-actions a { color: var(--brand); text-decoration: none; }
+.pixel-palette .case-actions a:hover { text-decoration: underline; }
