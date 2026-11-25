@@ -6,7 +6,7 @@
   <meta name="description" content="熬鹰资本交易档案，追踪 NVDA、DOGE 和 RAVE 的事件、入场、退出与原始证据。">
   <title>熬鹰资本｜事件交易档案 · GRT</title>
   <link rel="icon" href="./logo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="./eagle.css?v=2">
+  <link rel="stylesheet" href="./eagle.css?v=3">
 </head>
 <body>
   <header class="sitebar"><div class="wrap top">
@@ -14,33 +14,67 @@
     <nav aria-label="页面导航"><a href="#cases">交易案例</a><a href="#method">交易特点</a><a href="#sources">资料范围</a></nav>
   </div></header>
   <main class="wrap archive-layout">
-      <aside class="rail"><nav aria-label="章节目录">
-        <strong>章节目录</strong><a href="#nvda">黄仁勋复职</a><a href="#doge">特斯拉与 DOGE</a><a href="#rave">RAVE 反手</a><a href="#ant">美光与 ANT</a><a href="#method">交易特点</a><a href="#sources">资料与出处</a>
-      </nav></aside>
+    <aside class="rail">
+      <div class="rail-profile"><a class="identity" href="https://x.com/thankUcrypto"><img src="https://pbs.twimg.com/profile_images/1653241236827033600/2sCvAcOH_normal.jpg" width="42" height="42" alt=""><span><strong>熬鹰资本</strong><small>@thankUcrypto</small></span></a></div>
+      <div class="index-search" hidden>
+        <label for="case-search">查找交易案例</label>
+        <input id="case-search" type="search" placeholder="英伟达、止盈、DOGE" autocomplete="off">
+      </div>
+      <nav aria-label="章节目录">
+        <a class="rail-feature" href="#cases">核心交易案例</a>
+        <div class="rail-group"><strong>事件复盘</strong><ul><li data-topic="nvda"><a href="#nvda">英伟达复职</a></li><li data-topic="doge"><a href="#doge">特斯拉与 DOGE</a></li><li data-topic="rave"><a href="#rave">RAVE 空转多</a></li><li data-topic="ant"><a href="#ant">美光与 ANT</a></li></ul></div>
+        <div class="rail-group"><strong>研究笔记</strong><ul><li><a href="#method">交易特点</a></li><li><a href="#sources">资料与出处</a></li></ul></div>
+      </nav>
+    </aside>
     <div class="archive-content">
-    <header class="hero">
-      <div class="hero-copy">
-        <a class="identity" href="https://x.com/thankUcrypto"><img src="https://pbs.twimg.com/profile_images/1653241236827033600/2sCvAcOH_normal.jpg" width="48" height="48" alt=""><span><strong>熬鹰资本</strong><small>@thankUcrypto</small></span></a>
+      <header class="hero">
         <h1>熬鹰资本的事件交易档案</h1>
-        <p>从黄仁勋复职前的英伟达多仓，到特斯拉先跌后换空 DOGE，按事件梳理入场判断、实际成交和退出条件。</p>
-        
-      </div>
-      <div class="hero-ledger">
-        <div class="instrument"><strong>英伟达复职交易</strong><span>NVDAUSDT 永续 · 2026.11.23</span></div>
-        <div class="pnl"><strong>+179.32 万<small> USDT</small></strong><span>已实现盈亏 · 公开仓位截图</span></div>
-        <dl><div><dt>开仓均价</dt><dd>134.64</dd></div><div><dt>平仓均价</dt><dd>151.23</dd></div><div><dt>仓位持有</dt><dd>10 小时 45 分</dd></div></dl>
-        <div class="ledger-links"><a href="#nvda">交易时间轴</a><a href="https://x.com/thankUcrypto/status/2124869960187154910">仓位截图</a></div>
-      </div>
-    </header>
-    <section class="case-index" id="cases" aria-labelledby="case-title">
-      <h2 id="case-title">事件交易索引</h2>
-      <div class="case-grid">
-        <a href="#nvda"><span>NVDA · 股权永续</span><strong>黄仁勋复职</strong><small>提前布局反弹 · 止盈均价 151.23</small></a>
-        <a href="#doge"><span>DOGE · 加密合约</span><strong>马斯克与特朗普公开争执</strong><small>从特斯拉的先跌找到 DOGE 的空单</small></a>
-        <a href="#rave"><span>RAVE · 加密合约</span><strong>控盘质疑公开发酵</strong><small>顺着卖压做空 · 跌深后反手</small></a>
-        <a href="#ant"><span>MU / ANT · 跨标的</span><strong>美光走弱与 ANT 开盘</strong><small>先退出原持仓，再做新标的</small></a>
-      </div>
-    </section>
+        <p class="lede">从黄仁勋复职前的英伟达多仓，到特斯拉先跌后换空 DOGE。把消息、交易动作和退出条件放在同一条时间线上。</p>
+        <div class="hero-ledger">
+          <div class="instrument"><strong>英伟达复职交易</strong><span>NVDAUSDT 永续 · 2026.11.23</span></div>
+          <dl class="ledger-grid">
+            <div class="main-stat"><dt>已实现盈亏</dt><dd>+179.32 万 <small>USDT</small></dd></div>
+            <div><dt>开仓均价</dt><dd>134.64</dd></div>
+            <div><dt>平仓均价</dt><dd>151.23</dd></div>
+            <div><dt>持仓时间</dt><dd>10 小时 45 分</dd></div>
+          </dl>
+        </div>
+        <nav class="hero-links" aria-label="资料直达"><a href="#nvda">英伟达时间轴</a><a href="#method">交易方法</a><a href="https://x.com/thankUcrypto/status/2124869960187154910">仓位截图</a><a href="https://x.com/thankUcrypto">X 主页</a></nav>
+      </header>
+      <section class="case-index" id="cases" aria-labelledby="case-title">
+        <div class="section-head"><h2 id="case-title">核心交易案例</h2><span>入场依据 · 退出动作 · 原帖</span></div>
+        <p id="case-empty" role="status" hidden>没有找到匹配的案例。可以换个关键词。</p>
+        <div class="case-grid">
+        <section class="case-card nvda" data-topic="nvda">
+          <div class="card-meta"><span>NVDAUSDT</span><a href="#nvda">看案例</a></div>
+          <h3><a href="#nvda">先做反弹，等催化兑现</a></h3>
+          <p class="signal">开仓均价 134.64，原先计划在 150 止盈。</p>
+          <p>黄仁勋复职提前兑现了反弹预期，最终平仓均价 151.23，截图显示实现盈利约 179.32 万 USDT。</p>
+          <a class="source-link" href="https://x.com/thankUcrypto/status/2124869960187154910">查看原帖</a>
+        </section>
+        <section class="case-card doge" data-topic="doge">
+          <div class="card-meta"><span>DOGE</span><a href="#doge">看案例</a></div>
+          <h3><a href="#doge">用特斯拉先跌，找 DOGE 的交易窗口</a></h3>
+          <p class="signal">特斯拉快速下跌，DOGE 一度还没跟上。</p>
+          <p>特朗普和马斯克争执升级后，他转空 DOGE。这里能核对换仓与判断，首笔完整成交价尚未披露。</p>
+          <a class="source-link" href="https://x.com/thankUcrypto/status/1930660736042463380">查看原帖</a>
+        </section>
+        <section class="case-card rave" data-topic="rave">
+          <div class="card-meta"><span>RAVE</span><a href="#rave">看案例</a></div>
+          <h3><a href="#rave">卖压打开后做空，跌深后反手</a></h3>
+          <p class="signal">控盘质疑发酵后跟随卖压，后来低位转多。</p>
+          <p>同期帖子记录了约 2 附近的平仓。反手来自之后的复盘，具体反手价格未披露。</p>
+          <a class="source-link" href="https://x.com/thankUcrypto/status/2045714383062589615">查看原帖</a>
+        </section>
+        <section class="case-card ant" data-topic="ant">
+          <div class="card-meta"><span>MU / ANT</span><a href="#ant">看案例</a></div>
+          <h3><a href="#ant">美光走弱后，换到更明确的空头标的</a></h3>
+          <p class="signal">先平美光多单，再做空仍有 IPO 溢价的 ANT。</p>
+          <p>他同时观察 AI 板块走弱与新标的开盘反应，次日更新只留少量仓位。</p>
+          <a class="source-link" href="https://x.com/thankUcrypto/status/2123665773595902323">查看原帖</a>
+        </section>
+        </div>
+      </section>
       <article>
         <section id="nvda" class="sheet">
           <p class="eyebrow">2026 年 11 月 23 日 · NVDAUSDT 永续</p>
@@ -91,5 +125,24 @@
     </div>
   </main>
   <footer class="wrap footer"><a href="./">GRT 交易笔记</a><a href="#cases">返回事件索引</a></footer>
+  <script>
+    const search = document.querySelector('.index-search');
+    const input = search.querySelector('input');
+    const empty = document.querySelector('#case-empty');
+    const cards = [...document.querySelectorAll('.case-card')].map(card => {
+      const key = card.dataset.topic;
+      const navItem = document.querySelector('.rail [data-topic="' + key + '"]');
+      const section = document.getElementById(key);
+      return {card, navItem, text: [card, navItem, section].map(node => node.textContent).join(' ').toLowerCase()};
+    });
+    search.hidden = false;
+    input.addEventListener('input', () => {
+      const terms = input.value.toLowerCase().trim().split(/\s+/);
+      for (const {card, navItem, text} of cards) {
+        card.hidden = navItem.hidden = !terms.every(term => text.includes(term));
+      }
+      empty.hidden = cards.some(({card}) => !card.hidden);
+    });
+  </script>
 </body>
 </html>
