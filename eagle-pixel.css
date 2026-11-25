@@ -88,3 +88,30 @@ body.pixel-palette {
 .pixel-palette .chapter-sources li { background: var(--blue-note); border-color: #dfe7f7; }
 .pixel-palette .event-log time { color: var(--event-blue); }
 .pixel-palette .methods > div { background: var(--blue-note); border-color: #dfe7f7; }
+
+@media (min-width: 940px) {
+  .pixel-palette article {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.15rem;
+    max-width: none;
+  }
+  .pixel-palette article .chapter {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 0;
+    padding: clamp(1.15rem, 2.35vw, 1.6rem);
+  }
+  .pixel-palette .chapter-head h2 { font-size: clamp(1.35rem, 2.2vw, 1.85rem); }
+  .pixel-palette .chapter-insight { grid-template-columns: 2.65rem minmax(0, 1fr); }
+  .pixel-palette .chapter-facts > div { flex-basis: 0; min-width: 0; }
+  .pixel-palette .chapter-details { grid-template-columns: 1fr; gap: .8rem; }
+  .pixel-palette .chapter-details > div + div {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: .68rem 0 0;
+  }
+  .pixel-palette .chapter-next { margin-top: auto; border-top: 0; }
+}
