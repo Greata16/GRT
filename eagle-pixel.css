@@ -53,19 +53,19 @@ body.pixel-palette {
 .pixel-palette .case-card.rave .symbol { color: #723885; background: #f2e6f7; }
 .pixel-palette .case-card.ant .symbol { color: #87412f; background: var(--peach-note); }
 .pixel-palette article .chapter {
-  --chapter-accent: var(--event-blue);
-  --chapter-wash: var(--event-note);
+  --chapter-accent: #904831;
+  --chapter-wash: var(--peach-note);
   background: var(--surface);
   border-color: var(--line);
   border-top-color: var(--chapter-accent);
 }
-.pixel-palette article .chapter:is(#sizing,#market,#alts,#method) {
+.pixel-palette article .chapter:is(#sizing,#market,#alts) {
   --chapter-accent: var(--brand);
   --chapter-wash: var(--blue-note);
 }
-.pixel-palette article .chapter:is(#risk,#copy,#records,#sources) {
-  --chapter-accent: #904831;
-  --chapter-wash: var(--peach-note);
+.pixel-palette article .chapter:is(#risk,#copy,#records,#method,#sources) {
+  --chapter-accent: #643b92;
+  --chapter-wash: #f0e9f8;
 }
 .pixel-palette .chapter:target { box-shadow: 0 0 0 2px #b98add65; }
 .pixel-palette .chapter-insight,
