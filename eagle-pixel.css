@@ -145,3 +145,41 @@ body.pixel-palette {
 
 .pixel-palette .a9-ledger .ledger-grid .main-stat dd { font-size: clamp(1.7rem, 3.2vw, 2.45rem); }
 .pixel-palette .a9-ledger .instrument { color: #74502d; }
+
+/* Warm paper surfaces across index and long-form cards. */
+body.pixel-palette {
+  --paper: #f6f4ef;
+  --surface: #fffdf9;
+  --line: #e4ddd2;
+  --paper-note: #f6f1e8;
+}
+.pixel-palette article .chapter { --chapter-wash: var(--paper-note); }
+.pixel-palette article .chapter:is(#sizing,#market,#alts,#method,#risk,#copy,#records,#sources) {
+  --chapter-wash: var(--paper-note);
+}
+.pixel-palette .chapter-sources li,
+.pixel-palette .chapter-tags li,
+.pixel-palette .methods > div,
+.pixel-palette .topic-overview a:hover {
+  background: var(--paper-note);
+  border-color: var(--line);
+}
+.pixel-palette .case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem;
+}
+.pixel-palette .case-card .symbol,
+.pixel-palette .case-meta a {
+  padding: .1rem .43rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper-note);
+  font-size: .77rem;
+  line-height: 1.5;
+}
+.pixel-palette .case-card .symbol { margin-right: .12rem; }
+.pixel-palette .case-meta a { color: var(--brand); text-decoration: none; }
+.pixel-palette .case-meta a:hover { text-decoration: underline; }
+.pixel-palette .case-card .case-note { font-size: .8rem; color: var(--muted); }
