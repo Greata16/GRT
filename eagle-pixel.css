@@ -24,8 +24,6 @@ body.pixel-palette {
 .pixel-palette .top { border: 0; }
 .pixel-palette .top .brand { color: #fff; }
 .pixel-palette .brand img { outline: 1px solid #be87ee; outline-offset: 2px; }
-.pixel-palette .palette-links a { color: #eee6fc; }
-.pixel-palette .palette-links a:hover { color: var(--peach); }
 .pixel-palette .sitebar a:focus-visible { outline-color: var(--peach); }
 .pixel-palette .topic-overview { border-color: var(--line); }
 .pixel-palette .topic-overview a { color: var(--brand); }
