@@ -142,3 +142,6 @@ body.pixel-palette {
 @media (min-width: 940px) {
   .pixel-palette .chapter-kicker a { display: none; }
 }
+
+.pixel-palette .a9-ledger .ledger-grid .main-stat dd { font-size: clamp(1.7rem, 3.2vw, 2.45rem); }
+.pixel-palette .a9-ledger .instrument { color: #74502d; }
