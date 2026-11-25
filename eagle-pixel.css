@@ -114,3 +114,31 @@ body.pixel-palette {
   .reading-index a { display: block; padding: .24rem 0; color: var(--muted); text-decoration: none; }
   .reading-index a:hover, .reading-index a:focus-visible { color: var(--brand); text-decoration: underline; }
 }
+
+/* Single-column reading with optional detail. */
+.pixel-palette article .chapter { padding: clamp(.95rem, 2.5vw, 1.4rem); margin-bottom: .85rem; }
+.pixel-palette .chapter-head { margin-bottom: .62rem; }
+.pixel-palette .chapter-head h2 { font-size: clamp(1.35rem, 2.7vw, 1.95rem); }
+.pixel-palette .chapter-kicker { margin-bottom: .35rem; }
+.pixel-palette .chapter-tags { margin-top: .38rem; }
+.pixel-palette .chapter-insight { padding: .53rem .67rem; }
+.pixel-palette .chapter-facts { margin: .68rem 0 .75rem; }
+.pixel-palette .chapter-facts > div { padding: .48rem .62rem; }
+.chapter-expand {
+  margin-top: .68rem;
+  border-block: 1px solid var(--line);
+}
+.chapter-expand summary {
+  padding: .42rem .2rem;
+  color: var(--brand);
+  cursor: pointer;
+  font-size: .88rem;
+  font-weight: 700;
+}
+.chapter-expand summary:hover { text-decoration: underline; }
+.chapter-expanded { padding: .45rem 0 .78rem; }
+.pixel-palette .chapter-expand + .chapter-sources { border-top: 0; margin-top: .2rem; }
+.pixel-palette .chapter-next { margin-top: .55rem; padding-top: .38rem; }
+@media (min-width: 940px) {
+  .pixel-palette .chapter-kicker a { display: none; }
+}
