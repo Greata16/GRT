@@ -1,0 +1,68 @@
+.avatar-palette {
+  --paper: #f7f5fb;
+  --surface: #fefcff;
+  --ink: #24203b;
+  --muted: #5e5873;
+  --line: #ddd5eb;
+  --brand: #622f9f;
+  --brand-soft: #eee6fa;
+  --avatar-violet: #7835c8;
+  --lilac: #f3e9ff;
+  --blue-paper: #eef1ff;
+  --accent-rule: #c9b2e4;
+}
+.avatar-palette .top { border-bottom-color: var(--brand); }
+.avatar-palette .topic-overview,
+.avatar-palette .front-page { border-bottom-color: var(--accent-rule); }
+.avatar-palette .brand img { box-shadow: 0 0 0 2px #e4d7f7; }
+.palette-return {
+  padding: .26rem .6rem;
+  color: var(--brand);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+}
+.avatar-palette .index-search input { background: var(--surface); }
+.avatar-palette .hero-ledger { border-top-color: var(--avatar-violet); }
+.avatar-palette .section-head { border-bottom-color: var(--brand); }
+.avatar-palette article .chapter {
+  background: var(--surface);
+  border-color: var(--line);
+  border-top-color: var(--avatar-violet);
+  box-shadow: 0 4px 15px #24203b09;
+}
+.avatar-palette .chapter:is(#sizing,#market,#alts,#method) { border-top-color: #5a64a0; }
+.avatar-palette .chapter:is(#risk,#copy,#records,#sources) { border-top-color: #9664bd; }
+.avatar-palette .chapter:target { box-shadow: 0 0 0 2px #c6a6ea90; }
+.avatar-palette .chapter-kicker .chapter-type {
+  color: #572a89;
+  background: var(--lilac);
+  border-color: #e5d5f4;
+}
+.avatar-palette .chapter-tags li {
+  color: #4e4567;
+  background: #f5f1fa;
+  border-color: var(--line);
+}
+.avatar-palette .chapter-insight {
+  background: var(--lilac);
+  border-left-color: var(--avatar-violet);
+}
+.avatar-palette .chapter:is(#sizing,#market,#alts,#method) .chapter-insight {
+  background: var(--blue-paper);
+  border-left-color: #5a64a0;
+}
+.avatar-palette .chapter-insight span { color: var(--brand); }
+.avatar-palette .chapter-facts,
+.avatar-palette .chapter-facts > div + div,
+.avatar-palette .chapter-details > div + div,
+.avatar-palette .chapter-sources,
+.avatar-palette .chapter-next { border-color: var(--line); }
+.avatar-palette .chapter-facts dt,
+.avatar-palette .chapter-sources h3 { color: var(--muted); }
+.avatar-palette .chapter-paragraph { color: #38314b; }
+.avatar-palette .chapter-sources li {
+  background: #f5effb;
+  border-color: var(--line);
+}
+.avatar-palette .methods > div { background: var(--blue-paper); }
