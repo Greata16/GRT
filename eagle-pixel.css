@@ -12,7 +12,7 @@ body.pixel-palette {
   --navy: #201732;
   --event-note: #edf1f8;
   --blue-note: #eaf0fc;
-  --peach-note: #f6eee1;
+  --peach-note: #f2f3f5;
 }
 .pixel-palette .sitebar {
   color: #fff;
@@ -148,10 +148,10 @@ body.pixel-palette {
 
 /* Warm paper surfaces across index and long-form cards. */
 body.pixel-palette {
-  --paper: #f6f4ef;
-  --surface: #fffdf9;
-  --line: #e4ddd2;
-  --paper-note: #f6f1e8;
+  --paper: #f4f5f7;
+  --surface: #fff;
+  --line: #dfe2e7;
+  --paper-note: #f2f3f5;
 }
 .pixel-palette article .chapter { --chapter-wash: var(--paper-note); }
 .pixel-palette article .chapter:is(#sizing,#market,#alts,#method,#risk,#copy,#records,#sources) {
