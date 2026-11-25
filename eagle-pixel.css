@@ -43,7 +43,10 @@ body.pixel-palette {
   box-shadow: 0 0 0 100vmax var(--opening-paper);
   clip-path: inset(0 -100vmax);
 }
-.pixel-palette .front-page { border-bottom-color: var(--navy); }
+.pixel-palette .front-page {
+  border-bottom: 0;
+  box-shadow: 0 8px 12px -9px rgb(32 23 50 / 22%);
+}
 .pixel-palette .hero h1 { color: var(--navy); }
 .pixel-palette .hero-ledger { border-top-color: var(--violet); }
 .pixel-palette .instrument { color: var(--event-blue); }
