@@ -152,3 +152,9 @@ article { background: var(--surface); border: 1px solid var(--line); border-radi
   .case-card:first-of-type { border-top: 0; }
   .case-actions { display: flex; gap: .85rem; }
 }
+
+.topic-overview { margin-top: 1.35rem; scroll-margin-top: 1rem; }
+.topic-overview h2 { font-size: 1.25rem; margin-bottom: .55rem; }
+.topic-overview nav { display: flex; flex-wrap: wrap; gap: .45rem; }
+.topic-overview a { padding: .32rem .65rem; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); text-decoration: none; font-size: .9rem; }
+.topic-overview a:hover { background: var(--brand-soft); text-decoration: underline; }
