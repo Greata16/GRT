@@ -231,3 +231,66 @@ article { background: var(--surface); border: 1px solid var(--line); border-radi
   .front-page { grid-template-columns: 1fr; }
   .newspaper .hero { border-right: 0; padding-right: 0; }
 }
+
+/* Reading edition: metadata, key facts and source notes */
+.newspaper .chapter { padding-block: clamp(1.5rem, 4vw, 2.5rem); }
+.chapter-head { margin-bottom: .9rem; }
+.chapter-type {
+  border-top: 2px solid var(--ink);
+  color: var(--brand);
+  padding-top: .45rem;
+  margin-bottom: .4rem;
+  font: 750 .83rem/1.4 system-ui, sans-serif;
+}
+.chapter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  padding: 0;
+  margin: .45rem 0 0;
+  list-style: none;
+}
+.chapter-tags li {
+  color: #594735;
+  background: #f0e8da;
+  border: 1px solid #e4d9c9;
+  border-radius: 4px;
+  font: .8rem/1.45 system-ui, sans-serif;
+  padding: .14rem .42rem;
+}
+.chapter-facts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .72rem .8rem;
+  gap: .75rem 1.12rem;
+  margin: .9rem 0 1.1rem;
+  border-block: 1px solid #ded4c4;
+  background: #f4efe5;
+}
+.chapter-facts > div { flex: 1 1 9.5rem; }
+.chapter-facts dt { color: #635646; font: 700 .84rem/1.5 system-ui, sans-serif; }
+.chapter-facts dd { line-height: 1.5; font-weight: 730; margin-top: .2rem; }
+.chapter-subhead { font-size: 1.13rem; margin-block: 1rem .32rem; }
+.chapter-paragraph { margin-top: .25rem; }
+.chapter-sources {
+  margin-top: 1rem;
+  padding: .62rem .75rem;
+  border-left: 2px solid #aa7a56;
+  background: #f4efe6;
+}
+.chapter-sources h3 { font: 750 .84rem/1.55 system-ui, sans-serif; color: #5a4938; }
+.chapter-sources ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  padding: 0;
+  margin: .4rem 0 0;
+}
+.chapter-sources li { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .3rem; font-size: .88rem; line-height: 1.55; }
+.chapter-sources time { color: var(--muted); font: .72rem ui-monospace, monospace; }
+@media (max-width: 520px) {
+  .chapter-facts { gap: .65rem; }
+  .chapter-facts > div { flex-basis: 100%; }
+  .chapter-sources ul { display: grid; }
+}
