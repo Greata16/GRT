@@ -6,28 +6,21 @@
   <meta name="description" content="熬鹰资本交易档案。按公开记录整理仓位、行情判断、山寨做空、事件交易、出金与带单。">
   <title>熬鹰资本｜交易档案 · GRT</title>
   <link rel="icon" href="./logo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="./eagle.css?v=5">
+  <link rel="stylesheet" href="./eagle.css?v=6">
 </head>
-<body>
+<body class="newspaper">
   <header class="sitebar"><div class="wrap top">
     <a href="./" class="brand"><img src="./logo.jpg" width="34" height="34" alt="">GRT 交易笔记</a>
-    <nav aria-label="页面导航"><a href="#cases">交易案例</a><a href="#topics">交易专题</a><a href="#sources">资料范围</a></nav>
+    <a class="edition" href="#sources">交易员档案 · 2026.11.25</a>
   </div></header>
   <main class="wrap archive-layout">
-    <aside class="rail">
-      <div class="rail-profile"><a class="identity" href="https://x.com/thankUcrypto"><img src="https://pbs.twimg.com/profile_images/1653241236827033600/2sCvAcOH_normal.jpg" width="42" height="42" alt=""><span><strong>熬鹰资本</strong><small>@thankUcrypto</small></span></a></div>
-      <div class="index-search" hidden>
-        <label for="case-search">查找交易案例</label>
-        <input id="case-search" type="search" placeholder="英伟达、止盈、DOGE" autocomplete="off">
-      </div>
-      <nav aria-label="章节目录">
-        <a class="rail-feature" href="#cases">核心交易案例</a>
-        <div class="rail-group"><strong>事件复盘</strong><ul><li data-topic="nvda"><a href="#nvda">英伟达复职</a></li><li data-topic="doge"><a href="#doge">特斯拉与 DOGE</a></li><li data-topic="rave"><a href="#rave">RAVE 空转多</a></li><li data-topic="ant"><a href="#ant">美光与 ANT</a></li></ul></div>
-        <div class="rail-group"><strong>交易专题</strong><ul><li><a href="#sizing">仓位与杠杆</a></li><li><a href="#market">行情判断与择时</a></li><li><a href="#alts">山寨交易与做空</a></li><li><a href="#risk">止损、回撤与出金</a></li><li><a href="#copy">心态与带单</a></li><li><a href="#records">实盘记录与盈亏口径</a></li><li><a href="#method">交易特点</a></li><li><a href="#sources">资料与出处</a></li></ul></div>
-      </nav>
-    </aside>
     <div class="archive-content">
+      <section class="topic-overview" id="topics" aria-label="交易专题">
+        <nav aria-label="交易专题"><a href="#sizing">仓位与杠杆</a><a href="#market">行情判断与择时</a><a href="#alts">山寨交易与做空</a><a href="#risk">止损、回撤与出金</a><a href="#copy">心态与带单</a><a href="#records">实盘记录与盈亏口径</a><a href="#cases">事件与美股</a></nav>
+      </section>
+      <div class="front-page">
       <header class="hero">
+        <a class="identity" href="https://x.com/thankUcrypto"><img src="https://pbs.twimg.com/profile_images/1653241236827033600/2sCvAcOH_normal.jpg" width="42" height="42" alt=""><span><strong>熬鹰资本</strong><small>@thankUcrypto</small></span></a>
         <h1>熬鹰资本交易档案</h1>
         <p class="lede">从小资金交易到大仓位执行，按原帖整理熬鹰的仓位、行情判断、山寨做空、事件交易、止损出金与带单复盘。</p>
         <div class="hero-ledger">
@@ -41,15 +34,14 @@
         </div>
         <nav class="hero-links" aria-label="资料直达"><a href="#nvda">英伟达时间轴</a><a href="#method">交易方法</a><a href="https://x.com/thankUcrypto/status/2124869960187154910">仓位截图</a></nav>
       </header>
-      <section class="topic-overview" id="topics" aria-labelledby="topic-title">
-        <h2 id="topic-title">交易专题</h2>
-        <nav aria-label="交易专题"><a href="#sizing">仓位与杠杆</a><a href="#market">行情判断与择时</a><a href="#alts">山寨交易与做空</a><a href="#risk">止损、回撤与出金</a><a href="#copy">心态与带单</a><a href="#records">实盘记录与盈亏口径</a><a href="#cases">事件与美股</a></nav>
-      </section>
       <section class="case-index" id="cases" aria-labelledby="case-title">
         <div class="section-head"><h2 id="case-title">交易案例</h2></div>
+        <div class="index-search" hidden>
+        <label for="case-search">查找交易案例</label>
+        <input id="case-search" type="search" placeholder="英伟达、止盈、DOGE" autocomplete="off">
+      </div>
         <p id="case-empty" role="status" hidden>没有找到匹配的案例。可以换个关键词。</p>
         <div class="case-grid" aria-label="交易案例">
-          <div class="case-columns" aria-hidden="true"><span>标的</span><span>交易逻辑与执行</span><span>复盘与出处</span></div>
         <section class="case-card nvda" data-topic="nvda">
             <span class="symbol">NVDAUSDT</span>
             <div class="case-description"><h3><a href="#nvda">先做反弹，等催化兑现</a></h3><p class="signal">开仓均价 134.64，原先计划在 150 止盈。</p><p>黄仁勋复职提前兑现了反弹预期，最终平仓均价 151.23，截图显示实现盈利约 179.32 万 USDT。</p></div>
@@ -72,7 +64,8 @@
           </section>
         </div>
       </section>
-      <article>
+      </div>
+      <article aria-label="交易档案正文">
         <section id="nvda" class="sheet">
           <p class="eyebrow">2026 年 11 月 23 日 · NVDAUSDT 永续</p>
           <h2>从看反弹到兑现复职行情</h2>
@@ -134,15 +127,14 @@
     const empty = document.querySelector('#case-empty');
     const cards = [...document.querySelectorAll('.case-card')].map(card => {
       const key = card.dataset.topic;
-      const navItem = document.querySelector('.rail [data-topic="' + key + '"]');
       const section = document.getElementById(key);
-      return {card, navItem, text: [card, navItem, section].map(node => node.textContent).join(' ').toLowerCase()};
+      return {card, text: [card, section].map(node => node.textContent).join(' ').toLowerCase()};
     });
     search.hidden = false;
     input.addEventListener('input', () => {
       const terms = input.value.toLowerCase().trim().split(/\s+/);
-      for (const {card, navItem, text} of cards) {
-        card.hidden = navItem.hidden = !terms.every(term => text.includes(term));
+      for (const {card, text} of cards) {
+        card.hidden = !terms.every(term => text.includes(term));
       }
       empty.hidden = cards.some(({card}) => !card.hidden);
     });
